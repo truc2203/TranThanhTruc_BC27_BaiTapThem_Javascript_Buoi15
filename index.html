@@ -16,40 +16,34 @@
 <body>
     <div class="container mx-auto text-center">
         <div class="my-5 rounded-3" style="background-image: url(./img/bg-bt1.jpg);">
-            <h2 class="mb-5 pt-4">Bài tập 1</h2>
+            <h2 class="mb-4 pt-4">Bài tập 1</h2>
 
             <div class="col-sm-12 d-flex mb-3 justify-content-center">
                 <div class=" col-4 px-3 text-center">
                     <label class="form-label" for="userName">Họ và Tên</label>
                     <input type="text" class="w-100 rounded-3 form control" id="userName">
                 </div>
-            </div>
-            <div class="col-sm-12 d-flex mb-3 justify-content-center">
                 <div class=" col-4 px-3">
                     <label class="form-label" for="totalIncome">Tổng thu nhập năm</label>
                     <input type="number" class="w-100 rounded-3 form control" id="totalIncome">
                 </div>
-
-            </div>
-            <div class="col-sm-12 d-flex mb-3 justify-content-center">
                 <div class=" col-4 px-3">
                     <label class="form-label" for="people">Số người phụ thuộc</label>
                     <input type="number" class="w-100 rounded-3 form control" id="people">
                 </div>
-
             </div>
+            
             <div class="text-center mt-4 mb-3">
                 <button onclick="
                 tax()" class="btn btn-success">Xuất Thuế</button>
             </div>
-            <p class="fs-3" id="customer" style="font-weight: 500;">Họ Tên: </p>
-            <p class="fs-3 " id="mustPay" style="font-weight: 500;">Phải trả : </p>
+            <p class="fs-3 mb-0" id="customer" style="font-weight: 500;">Họ Tên: </p>
+            <p class="fs-3 mb-0 " id="mustPay" style="font-weight: 500;">Phải trả : </p>
         </div>
 
 
-
         <div class="my-5 rounded-3" style="background-image: url(./img/bg-bt1.jpg);">
-            <h2 class="mb-5 pt-4">Bài tập 2</h2>
+            <h2 class="mb-4 pt-4">Bài tập 2</h2>
 
             <div class="col-sm-12 d-flex mb-3 justify-content-center">
                 <div class=" col-4 px-3 text-center">
@@ -60,7 +54,7 @@
             <div class="col-sm-12 d-flex mb-3 justify-content-center">
                 <div class=" col-4 px-3">
                     <label for="">Loại khách hàng</label>
-                    <select name="" id="customerType" class="form-control my-3">
+                    <select name="" id="customerType" class="form-control my-3 mb-0">
                         <option value="ND">Cá nhân</option>
                         <option value="DN">Doanh nghiệp</option>
                     </select>
@@ -85,8 +79,8 @@
                 <button onclick="
                 cap()" class="btn btn-success">Thành tiền</button>
             </div>
-            <p class="fs-3" id="customer2" style="font-weight: 500;">Mã khách hàng : </p>
-            <p class="fs-3 " id="totalPay" style="font-weight: 500;">Tổng tiền : </p>
+            <p class="fs-3 mb-0" id="customer2" style="font-weight: 500;">Mã khách hàng : </p>
+            <p class="fs-3 mb-0" id="totalPay" style="font-weight: 500;">Tổng tiền : </p>
         </div>
     </div>
 
