@@ -5,18 +5,21 @@ function tax() {
 
   var mustPay = document.getElementById("mustPay");
   var customer = document.getElementById("customer");
-
+// Biến hứng giá trị TNCT
   var total = incomeTax(totalIncome, people);
 
+  // Biến hứng giá trị thuế xuất
   var percentTax = perTax(total).toLocaleString();
   customer.innerHTML = `Họ Tên : ${userName}`
   mustPay.innerHTML = `Phải trả : ${percentTax} VND`;
 }
 
+// Hàm tính thu nhập chịu thuế
 function incomeTax(totalIncome, people) {
   return totalIncome - 4000000 - people * 1600000;
 }
 
+// Hàm tính thuế xuất
 function perTax(total) {
   if (total <= 60000000) {
 

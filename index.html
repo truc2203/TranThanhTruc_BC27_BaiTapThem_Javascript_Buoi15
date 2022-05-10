@@ -54,8 +54,8 @@
             <div class="col-sm-12 d-flex mb-3 justify-content-center">
                 <div class=" col-4 px-3">
                     <label for="">Loại khách hàng</label>
-                    <select name="" id="customerType" class="form-control my-3 mb-0">
-                        <option value="ND">Cá nhân</option>
+                    <select name="" id="customerType" onchange="show()" class="form-control my-3 mb-0">
+                        <option value="ND">Nhà dân</option>
                         <option value="DN">Doanh nghiệp</option>
                     </select>
                 </div>
@@ -69,7 +69,7 @@
 
             </div>
             <div  class="col-sm-12 d-flex mb-3 justify-content-center">
-                <div id="showConnect" class=" col-4 px-3">
+                <div style="display: none;" id="showConnect" class=" col-4 px-3">
                     <label class="form-label" for="connects">Số kết nối</label>
                     <input type="number" class="w-100 rounded-3 form control" id="connects">
                 </div>
